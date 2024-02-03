@@ -1,0 +1,159 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+.container
+{
+    box-sizing: border-box;
+    height: 80vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 40px auto;
+    grid-template-rows: 30px auto;
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
+.chip
+{
+    background-color: #c0c0c0;
+    position: sticky;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+}
+.head-row
+{
+    display: flex;
+    position: sticky;
+    top: 0%;
+    background-color: white;
+}
+
+.head-cell
+{
+    width: 150px;
+    border: 1px solid #c0c0c0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.sno-cell
+{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    border: 1px solid #c0c0c0;
+}
+
+.sno
+{
+    background-color: white;
+    position: sticky;
+    left: 0%;
+}
+
+.row
+{
+    display: flex;
+}
+
+.cel{
+    border: 1px solid #c0c0c0;
+    height: 30px;
+    width: 150px;
+}
+
+.cel:focus
+{
+    background-color: #dadada;
+    /* outline-color: blue; */
+}
+
+
+/* ---------------optopns styling------------------ */
+
+.form-container
+{
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 30px;
+}
+
+form > div> label
+{
+    cursor: pointer;
+}
+
+input[type = "checkbox"], input[type = "radio"]
+{
+    display: none;
+}
+
+input[type = "checkbox"]:checked + label , input[type = "radio"]:checked + label
+{
+    color: red;
+}
+
+select
+{
+    width: 100px;
+    height: 24px;
+}
+
+input[type = "number"]
+{
+    width: 50px;
+    height: 20px;
+}
+
+input[type = "color"]
+{
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+}
+
+input[type = "color"] + label:hover
+{
+    color: red;
+}
+
+/* ----------------------xxx---------------------*/
+
+.selected-cell
+{
+    display: flex;
+    margin: 20px;
+    gap: 10px;
+}
+
+.id
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eaeaea;
+    width: 40px ;
+    font-weight: 900;
+    height: 30px;
+    border: 1px solid black;
+} 
+
+.active-cell
+{
+    outline: 2px solid red;
+    z-index: 10;
+    box-sizing: border-box;
+}

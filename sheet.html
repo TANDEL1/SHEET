@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sheet.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <section class="options">
+        <form class="form-container" id="options-form">
+            <div>
+                <select name="fontfamily">
+                    <option value="default1">Default1</option>
+                    <option value="default2">Default2</option>
+                    <option value="default3">Default3</option>
+                    <option value="default4">Default4</option>
+                </select>
+            </div>
+            <div>
+                <input type="number" name="fontsize" id="fontsize" value="14">
+                <label for="fontsize"></label>
+            </div>
+            <div>
+                <input type="checkbox" name="bold" id="bold">
+                <label for="bold">
+                    <span class="material-icons">
+                        format_bold
+                    </span>
+                </label>
+            </div>
+            <div>
+                <input type="checkbox" name="italic" id="italic">
+                <label for="italic">
+                    <span class="material-icons">
+                        format_italic
+                    </span>
+                </label>
+            </div>
+            <div>
+                <input type="checkbox" name="underlined" id="underlined">
+                <label for="underlined">
+                    <span class="material-icons">
+                        format_underlined
+                    </span>
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="align" id="align-start" value="left" checked>
+                <label for="align-start">
+                    <span class="material-icons">
+                        format_align_left
+                    </span>
+                </label>
+                <input type="radio" name="align" id="align-center" value="center">
+                <label for="align-center">
+                    <span class="material-icons">
+                        format_align_center
+                    </span>
+                </label>
+                <input type="radio" name="align" id="align-end" value="right">
+                <label for="align-end">
+                    <span class="material-icons">
+                        format_align_right
+                    </span>
+                </label>
+            </div>
+            <div>
+                <input type="color" name="fontcolour" id="fontcolour" value="#000000">
+                <label for="fontcolour">
+                    <span class="material-icons">
+                        border_color
+                    </span>
+                </label>
+            </div>
+            <div>
+                <input type="color" name="backgroundcolour" id="backgroundcolour" value="#ffffff">
+                <label for="backgroundcolour">
+                    <span class="material-icons">
+                        format_color_fill
+                    </span>
+                </label>
+            </div>
+        </form>
+        <div class="selected-cell">
+            <div class="id" id="selectdecell">Null</div>
+            <input type="text" id="expression">
+        </div>
+    </section>
+    <section class="container">
+        <div class="chip"></div>
+        <div class="head-row" id="head-row"></div>
+        <div class="sno" id="head-cell"></div>
+        <div class="body" id="body"></div>
+    </section>
+    <script src="options.js"></script>
+    <script src="sheet.js"></script>
+</body>
+</html>
